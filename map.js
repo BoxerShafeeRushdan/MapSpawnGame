@@ -1,13 +1,17 @@
 class Map {
-    constructor (emptyBoard){
+    constructor (){
        
-        this.emptyBoard = emptyBoard
+        this.board = []
         
     }
 
     genNewBoard(){
        
-     return   this.emptyBoard = ['NEW GAME',[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+     return   this.board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+    }
+
+    printBoard(){
+      return  this.board.forEach(x => console.log(x))
     }
 }
 
