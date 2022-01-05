@@ -3,13 +3,14 @@ const Map = require('./map')
 describe('Map', () => {
     const testMap = new Map();
     
-    test('Has right row 1', () =>{
-        expect(testMap.row1).toBe([0,0,0,0])
+    test('Generate new board test', () =>{
+        expect(testMap.genNewBoard()).toStrictEqual(['NEW GAME',[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]])
     })
+    
+    console.log(testMap.genNewBoard())
+    
 })
-
-
 //QUESTIONS
 
-//1.Legacy octal literals are not allowed in strict mode. (how to turn off strict mode to start #'s with 0)
+//1.How to skip a line in the output)
 
