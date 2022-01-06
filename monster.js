@@ -1,4 +1,4 @@
-class Player {
+class Monster {
     constructor (name,hp,attack) {
         this.name = name
         this.hp = hp
@@ -6,16 +6,16 @@ class Player {
     }
 
 }
-class RandomPlayer extends Player {
+class RandomMonster extends Monster {
     constructor (name,hp,attack) {
         super(name,hp,attack)
-        this.name = "Swampert"
-        this.hp = 173
-        this.attack = 80
+        this.name = "Gengar"
+        this.hp = 153
+        this.attack = 180
     }
 }
 
 
-module.exports = Player
+module.exports = Monster
 
-module.exports = RandomPlayer
+module.exports = RandomMonster
