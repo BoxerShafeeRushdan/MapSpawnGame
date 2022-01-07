@@ -11,7 +11,7 @@ class Swampert extends Player {
         super(name,hp,attack)
         this.name = "Swampert"
         this.hp = 173
-        this.attack = 80
+        this.attack = Math.floor(Math.random() * 200)
     }
 }
 
