@@ -6,7 +6,7 @@ class Player {
     }
 
 }
-class RandomPlayer extends Player {
+class Swampert extends Player {
     constructor (name,hp,attack) {
         super(name,hp,attack)
         this.name = "Swampert"
@@ -18,4 +18,4 @@ class RandomPlayer extends Player {
 
 module.exports = Player
 
-module.exports = RandomPlayer
+module.exports = Swampert

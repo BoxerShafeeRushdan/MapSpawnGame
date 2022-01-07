@@ -1,5 +1,5 @@
 const Player = require('./player')
-const RandomPlayer = require('./player')
+const Swampert = require('./player')
 
 describe('Player', () => {
     const testPlayer = new Player();

@@ -11,7 +11,7 @@ describe('Map', () => {
     testMap.printBoard()
     
 })
-//QUESTIONS
+//Next steps
 
-//1.How to skip a line in the output)
+//1. Break up all the arrays, take out a 0, add the [P] 
 

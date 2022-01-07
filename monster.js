@@ -6,7 +6,7 @@ class Monster {
     }
 
 }
-class RandomMonster extends Monster {
+class Gengar extends Monster {
     constructor (name,hp,attack) {
         super(name,hp,attack)
         this.name = "Gengar"
@@ -18,4 +18,4 @@ class RandomMonster extends Monster {
 
 module.exports = Monster
 
-module.exports = RandomMonster
+module.exports = Gengar
