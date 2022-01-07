@@ -138,8 +138,11 @@ const randomMonster3 = monstersArr[randomArrM3]
 
 const testMap = new Map();
 
+//Start and restart game here
 
 testMap.battle()
+
+//testMap.reset()
 
 
 
