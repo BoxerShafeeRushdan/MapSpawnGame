@@ -13,9 +13,17 @@ class Map {
     
   }
   
-  genNewBoard(){
-    return   this.board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+  reset(){
+    
+   this.board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+    return this.printBoard()
   }
+  printBoard(){
+    
+   
+    return this.board.forEach(x => console.log(x))
+  }
+
 
   battle(){
     let p = Math.floor(Math.random() * 16)
@@ -113,28 +121,6 @@ class Map {
     
   }
   
-  printBoard(){
-    return  this.board.forEach(x => console.log(x))
-  }
-  
-  splitBoard(){
-    let nastyBoard = this.board.toString().split("")
-    
-   nastyBoard.forEach(x => {  
-      
-    if(x === "0" ) {
-      console.log(x)
-     }
-    if(x === "P"){
-      console.log("Player!")
-    }
-    if(x === "M"){
-      console.log("Monster!")
-    }
-  })
-    
-     
-  }
 
 }
 
@@ -152,7 +138,7 @@ const randomMonster3 = monstersArr[randomArrM3]
 
 const testMap = new Map();
 
-// console.log(testMap.printBoard())
+
 testMap.battle()
 
 
