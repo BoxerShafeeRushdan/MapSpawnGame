@@ -39,70 +39,70 @@ class Map {
     
     if(p === m1){
       setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
-      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
-      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[36m",`Player attack points: ${player.attack}`)}, 2500);
       if (monster.attack > player.attack){
         setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
 
       } else {
-        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+        setTimeout(() => {console.log("\x1b[33m", "You win!")}, 3000);
       }
 
 
     }
     else if(p === m2){
       setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
-      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
-      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[36m",`Player attack points: ${player.attack}`)}, 2500);
       if (monster.attack > player.attack){
         setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
 
       } else {
-        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+        setTimeout(() => {console.log("\x1b[33m", "You win!")}, 3000);
       }
     }
     else if(p === m3){
       setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
-      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
-      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[36m",`Player attack points: ${player.attack}`)}, 2500);
       if (monster.attack > player.attack){
         setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
 
       } else {
-        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+        setTimeout(() => {console.log("\x1b[33m", "You win!")}, 3000);
       }
     }
     else if(p === m4){
       setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
-      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
-      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[36m",`Player attack points: ${player.attack}`)}, 2500);
       if (monster.attack > player.attack){
         setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
 
       } else {
-        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+        setTimeout(() => {console.log("\x1b[33m", "You win!")}, 3000);
       }
     }
     else if(p === m5){
       setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
-      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
-      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[36m",`Player attack points: ${player.attack}`)}, 2500);
       if (monster.attack > player.attack){
         setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
 
       } else {
-        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+        setTimeout(() => {console.log("\x1b[33m", "You win!")}, 3000);
       }
     }
     else if(p === m6){
       setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
-      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
-      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[36m",`Player attack points: ${player.attack}`)}, 3000);
       if (monster.attack > player.attack){
-        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 4000);
 
       } else {
-        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+        setTimeout(() => {console.log("\x1b[33m", "You win!")}, 4000);
       }
     } else {
       console.log(randomPlayer)
