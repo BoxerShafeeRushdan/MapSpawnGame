@@ -2,7 +2,7 @@ class Monster {
     constructor (name,hp,attack) {
         this.name = name
         this.hp = hp
-        this.attack = attack 
+        this.attack = Math.floor(Math.random() * 200)
     }
 
 }
@@ -11,7 +11,7 @@ class Gengar extends Monster {
         super(name,hp,attack)
         this.name = "Gengar"
         this.hp = 153
-        this.attack = 180
+        this.attack = Math.floor(Math.random() * 200)
     }
 }
 

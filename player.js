@@ -2,7 +2,7 @@ class Player {
     constructor (name,hp,attack) {
         this.name = name
         this.hp = hp
-        this.attack = attack 
+        this.attack = Math.floor(Math.random() * 200)
     }
 
 }

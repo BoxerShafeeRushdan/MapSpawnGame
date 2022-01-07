@@ -4,8 +4,8 @@ const Monster = require('./monster')
 const Gengar = require('./monster')
 
 
-let playerArr = [["P",0,0,"M"],[0,"P","M",0],["M",0,"P",0],[0,0,0,"P"]]
-let monstersArr = [["M",0,0,0],[0,"M",0,0],["M",0,0,0],[0,"M",0,"M"],[0,"M",0,0],[0,0,"M",0],[0,"M",0,0],[0,0,"M","M"]]
+let playerArr = [["P",0,0,"M"],[0,"P","M",0],["M",0,"P",0],[0,"M",0,"P"]]
+let monstersArr = [["M",0,0,"M"],[0,"M","M",0],["M",0,"M",0],[0,"M",0,"M"],[0,0,"M","M"]]
 class Map {
   constructor (){
     
@@ -17,7 +17,7 @@ class Map {
     return   this.board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
   }
 
-  genNewMAndP(){
+  battle(){
     let p = Math.floor(Math.random() * 16)
     let m1 = Math.floor(Math.random() * 16)
     let m2 = Math.floor(Math.random() * 16)
@@ -26,29 +26,91 @@ class Map {
     let m5 = Math.floor(Math.random() * 16)
     let m6 = Math.floor(Math.random() * 16)
 
+    const monster = new Monster();
+    const player = new Player();
     
     if(p === m1){
-      console.log("\x1b[31m", "A wild Monster appeared! !")
+      setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
+      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      if (monster.attack > player.attack){
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+
+      } else {
+        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+      }
+
+
     }
-    if(p === m2){
-      console.log("\x1b[31m", "A wild Monster appeared! 2")
+    else if(p === m2){
+      setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
+      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      if (monster.attack > player.attack){
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+
+      } else {
+        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+      }
     }
-    if(p === m3){
-      console.log("\x1b[31m", "A wild Monster appeared! 3")
+    else if(p === m3){
+      setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
+      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      if (monster.attack > player.attack){
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+
+      } else {
+        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+      }
     }
-    if(p === m4){
-      console.log("\x1b[31m", "A wild Monster appeared! 4")
+    else if(p === m4){
+      setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
+      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      if (monster.attack > player.attack){
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+
+      } else {
+        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+      }
     }
-    if(p === m5){
-      console.log("\x1b[31m", "A wild Monster appeared! 5")
+    else if(p === m5){
+      setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
+      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      if (monster.attack > player.attack){
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+
+      } else {
+        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+      }
     }
-    if(p === m6){
-      console.log("\x1b[31m", "A wild Monster appeared! 6")
+    else if(p === m6){
+      setTimeout(() => {console.log("\x1b[33m", "A wild Monster appeared!")}, 1000);
+      setTimeout(() => {console.log(`Monster attack points: ${monster.attack}`)}, 2000);
+      setTimeout(() => {console.log(`Player attack points: ${player.attack}`)}, 2500);
+      if (monster.attack > player.attack){
+        setTimeout(() => {console.log("\x1b[31m", "You lose!")}, 3000);
+
+      } else {
+        setTimeout(() => {console.log("\x1b[34m", "You win!")}, 3000);
+      }
+    } else {
+      console.log(randomPlayer)
+      console.log(randomMonster)
+      console.log(randomMonster2)
+      console.log(randomMonster3)
+      setTimeout(() => {console.log("\x1b[36m", `Person location ${p}`)}, 5000);
+      setTimeout(() => {console.log("\x1b[32m",`Monster 1 Location ${m1}`)}, 1000);
+      setTimeout(() => {console.log("\x1b[32m",`Monster 2 Location ${m2}`)}, 1500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster 3 Location ${m3}`)}, 2000);
+      setTimeout(() => {console.log("\x1b[32m",`Monster 4 Location ${m4}`)}, 2500);
+      setTimeout(() => {console.log("\x1b[32m",`Monster 5 Location ${m5}`)}, 3000);
+      setTimeout(() => {console.log("\x1b[32m",`Monster 6 Location ${m6}`)}, 3500);
+      setTimeout(() => {console.log("\x1b[35m",`No Monsters in your path today!`)}, 6000);
     }
     
-    console.log("\x1b[36m", `Person location ${p}`)
-    
-    console.log("\x1b[32m",`Monster Location ${m1,m2}`)
   }
   
   printBoard(){
@@ -89,15 +151,12 @@ const randomArrM3 = Math.floor(Math.random() * monstersArr.length)
 const randomMonster3 = monstersArr[randomArrM3] 
 
 const testMap = new Map();
-testMap.genNewBoard()
+
 // console.log(testMap.printBoard())
-console.log(testMap.genNewMAndP())
+testMap.battle()
 
 
-console.log(randomPlayer)
-console.log(randomMonster)
-console.log(randomMonster2)
-console.log(randomMonster3)
+
 
 
 module.exports = Map 
